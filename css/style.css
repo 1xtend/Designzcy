@@ -7,6 +7,7 @@
   --color-orange: rgba(255, 122, 80, 0.83);
   --color-primary: #3d3d3f;
   --color-gray: #646464;
+  --color-medium-gray: #595959;
   --color-dark-gray: #515155;
   --color-white: #fff;
 }
@@ -543,4 +544,117 @@ body.is-fixed {
   line-height: 129%;
   color: var(--color-primary);
   opacity: 0.7;
+}
+
+/*===============Offer===============*/
+.offer__body {
+  padding: 30px 0 60px;
+}
+@media (max-width: 990.98px) {
+  .offer__body {
+    padding: 20px 0 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .offer__body {
+    padding: 20px 0;
+  }
+}
+.offer__title {
+  margin-bottom: 117px;
+}
+@media (max-width: 990.98px) {
+  .offer__title {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 767.98px) {
+  .offer__title {
+    margin-bottom: 65px;
+  }
+}
+
+.grid-offer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  -moz-column-gap: 51px;
+       column-gap: 51px;
+  row-gap: 70px;
+}
+@media (max-width: 990.98px) {
+  .grid-offer {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+.grid-offer__item {
+  text-align: center;
+  box-shadow: 0px 4px 22px rgba(95, 95, 95, 0.05);
+  border-radius: 23px;
+  padding: 0 35px 40px;
+}
+.grid-offer__item:hover .grid-offer__image {
+  background-color: var(--color-orange);
+}
+.grid-offer__item:hover .grid-offer__image path {
+  fill: var(--color-white);
+}
+@media (max-width: 990.98px) {
+  .grid-offer__item {
+    padding: 0 20px 20px;
+  }
+}
+.grid-offer__image {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 22px rgba(95, 95, 95, 0.05);
+  border-radius: 555px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -51px;
+  background-color: var(--color-white);
+  transition: background-color 0.2s linear;
+  margin-bottom: 23px;
+}
+.grid-offer__image svg path {
+  fill: var(--color-primary);
+  transition: fill 0.2s linear;
+}
+.grid-offer__title {
+  font-size: 1.7142857143rem;
+  line-height: 129%;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.grid-offer__text {
+  font-size: 1.1428571429rem;
+  line-height: 163%;
+  color: var(--color-medium-gray);
+  margin-bottom: 27px;
+}
+.grid-offer__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f5;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transition: background-color 0.2s linear;
+}
+.grid-offer__btn svg path {
+  fill: var(--color-medium-gray);
+  transition: fill 0.2s linear;
+}
+.grid-offer__btn:hover {
+  background-color: var(--color-orange);
+}
+.grid-offer__btn:hover path {
+  fill: var(--color-white);
+}
+.grid-offer__btn:active {
+  background-color: rgba(240, 100, 58, 0.83);
 }
