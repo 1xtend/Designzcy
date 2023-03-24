@@ -21,6 +21,10 @@
 @import './config.scss';
 /*===============Global styles===============*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
 
@@ -546,4 +550,78 @@ body {
       background-color: rgba(240, 100, 58, 0.83);
     }
   }
+}
+
+/*===============Projects===============*/
+
+.projects {
+  &__body {
+    text-align: center;
+    padding: 60px 0;
+
+    @media (max-width: 990.98px) {
+      padding: 40px 0;
+    }
+    @media (max-width: 767.98px) {
+      padding: 20px 0;
+    }
+  }
+  &__title {
+    margin-bottom: 55px;
+
+    @media (max-width: 990.98px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767.98px) {
+      margin-bottom: 25px;
+    }
+  }
+  &__grid {
+    margin-bottom: 60px;
+
+    @media (max-width: 990.98px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767.98px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__btn {
+  }
+}
+
+.grid-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+
+  &__item {
+    filter: drop-shadow(0px 4px 22px rgba(95, 95, 95, 0.05));
+    background-color: var(--color-white);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &__media {
+    width: 100%;
+    position: relative;
+    padding-bottom: 74%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    padding: 20px 5px;
+  }
+  &__title {
+    @include textProperties(20px, 26px, var(--color-primary));
+    font-weight: 500;
+  }
+}
+.btn {
 }
