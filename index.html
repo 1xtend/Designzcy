@@ -14,10 +14,10 @@
       <header class="header">
         <div class="container">
           <div class="header__body">
-            <div class="header__logo logo">
+            <a href="#" class="header__logo logo">
               <img src="./images/global/global-logo.svg" alt="logo" />
               <span>Designzcy</span>
-            </div>
+            </a>
 
             <nav class="header__nav navbar">
               <ul class="navbar__list">
@@ -31,7 +31,7 @@
                   <a href="#projects" class="navbar__link">Portfolio</a>
                 </li>
                 <li class="navbar__item">
-                  <a href="#" class="navbar__link">Blog</a>
+                  <a href="#footer" class="navbar__link">Blog</a>
                 </li>
               </ul>
             </nav>
@@ -543,9 +543,72 @@
             </div>
           </div>
         </section>
+
+        <section class="contact">
+          <div class="container">
+            <div class="contact__body">
+              <h2 class="contact__title title">Contact Us</h2>
+
+              <form class="contact__form form-contact">
+                <div class="form-contact__grid">
+                  <div class="form-contact__action">
+                    <h3 class="form-contact__title">Full Name</h3>
+                    <input
+                      type="text"
+                      class="form-contact__input"
+                      autocomplete="off"
+                      placeholder="Enter your full name"
+                      required
+                    />
+                  </div>
+                  <div class="form-contact__action">
+                    <h3 class="form-contact__title">Email Address</h3>
+                    <input
+                      type="email"
+                      class="form-contact__input"
+                      autocomplete="off"
+                      placeholder="Enter your mail"
+                      required
+                    />
+                  </div>
+                  <div class="form-contact__action">
+                    <h3 class="form-contact__title">Deadline</h3>
+                    <input
+                      type="text"
+                      class="form-contact__input"
+                      autocomplete="off"
+                      placeholder="Projects deadline"
+                      required
+                    />
+                  </div>
+                  <div class="form-contact__action">
+                    <h3 class="form-contact__title">Budget</h3>
+                    <input
+                      type="number"
+                      class="form-contact__input"
+                      autocomplete="off"
+                      placeholder="Enter your budget"
+                      required
+                    />
+                  </div>
+                  <div class="form-contact__action form-contact__action_last">
+                    <h3 class="form-contact__title">Write us</h3>
+                    <textarea
+                      class="form-contact__input form-contact__input_textarea"
+                      autocomplete="off"
+                      placeholder="Enter message here......"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <button class="btn form-contact__button" type="submit">Submit project</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer class="footer"></footer>
+      <footer class="footer" id="footer"></footer>
     </div>
 
     <script src="./js/script.js"></script>
