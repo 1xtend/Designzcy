@@ -1021,10 +1021,15 @@ body {
     display: inline-flex;
     align-items: center;
     padding: 5px 12px;
+    border: 1.1px solid #e1e2e4;
 
     &::placeholder {
       color: var(--color-dark-gray);
       opacity: 0.4;
+    }
+
+    &:focus {
+      border-color: var(--color-gray);
     }
 
     &_textarea {
@@ -1137,6 +1142,10 @@ body {
 
     &::placeholder {
       color: rgba(117, 117, 117, 0.65);
+    }
+
+    &:focus {
+      border-color: var(--color-gray);
     }
   }
   &__button {

@@ -1150,6 +1150,7 @@ body.is-fixed {
   display: inline-flex;
   align-items: center;
   padding: 5px 12px;
+  border: 1.1px solid #e1e2e4;
 }
 .form-contact__input::-moz-placeholder {
   color: var(--color-dark-gray);
@@ -1162,6 +1163,9 @@ body.is-fixed {
 .form-contact__input::placeholder {
   color: var(--color-dark-gray);
   opacity: 0.4;
+}
+.form-contact__input:focus {
+  border-color: var(--color-gray);
 }
 .form-contact__input_textarea {
   padding: 18px 12px;
@@ -1277,6 +1281,9 @@ body.is-fixed {
 }
 .form-col-footer__email::placeholder {
   color: rgba(117, 117, 117, 0.65);
+}
+.form-col-footer__email:focus {
+  border-color: var(--color-gray);
 }
 .form-col-footer__button {
   width: 100%;
