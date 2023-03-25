@@ -1294,3 +1294,6 @@ body.is-fixed {
     margin-right: 25px;
   }
 }
+.nav-footer__link:hover {
+  text-decoration: underline;
+}
