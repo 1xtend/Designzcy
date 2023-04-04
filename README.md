@@ -1,2 +1,2 @@
 # Designzcy
-Link on github pages - https://1xtend.github.io/Designzcy/
+Website link - https://1xtend.github.io/Designzcy/
